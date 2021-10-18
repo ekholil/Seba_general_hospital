@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "name": "Cardio Monitoring",
+      "desc": "Cardiac monitoring is used to either identify or rule out a heart rhythm disorder and to determine the right course of treatment",
+      "img": "https://i.ibb.co/Jj5Ghnc/cardio.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Prostheses",
+      "desc": "A prosthesis substitutes for a part of the body that may have been missing at birth, or that is lost in an accident or through ",
+      "img": "https://i.ibb.co/Gvdc1Pq/Prostheses.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Pulmonary",
+      "desc": "Pulmonary hypertension is a type of high blood pressure that affects the arteries in the lungs and the right side of the heart.",
+      "img": "https://i.ibb.co/v3ytHjn/palmonary.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Medicine",
+      "desc": "the science or practice of the diagnosis, treatment, and prevention of disease (in technical use often taken to exclude surgery",
+      "img": "https://i.ibb.co/n661xn6/medicine.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Dental Service",
+      "desc": "Dental and oral health is an essential part of your overall health and well-being. Poor oral hygiene can lead to dental cavities ",
+      "img": "https://i.ibb.co/c6hPFD4/dantal.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Cardiology",
+      "desc": "Cardiology is a medical, not surgical, discipline. Cardiologists provide the continuing care of patients with ",
+      "img": "https://i.ibb.co/6W7cQMN/cardiology.jpg"
+    }
+  ]
+
+
+
+
+
