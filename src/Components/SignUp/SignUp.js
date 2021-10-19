@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { AiOutlineUser, AiFillGoogleCircle } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import Usefirebase from '../../Hooks/useFirebase';
+import UseAuth from '../../Hooks/UseAuth';
+
 
 const SignUp = () => {
-    const {signUpWithEmail, signInUsingGoogle} = Usefirebase()
+    const {signUpWithEmail, signInUsingGoogle} = UseAuth()
    
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')

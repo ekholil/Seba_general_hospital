@@ -1,16 +1,17 @@
 import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Usefirebase from "../../Hooks/useFirebase";
+import UseAuth from "../../Hooks/UseAuth";
+
 
 const Header = () => {
-  const { user, logOut } = Usefirebase()
+  const { user, logOut } = UseAuth()
   return (
-    <div className="py-3">
+    <div>
       <Navbar bg="light" expand="lg">
-      <div className="container">
+      <div className="container md:w-10/12 mx-auto">
         <Link className="no-underline" to="/home">
-          <h1 className="text-green-500 text-xl">Seba Hospital</h1>
+          <h1 className="text-green-500 text-4xl py-1">Seba Hospital</h1>
         </Link>
         
         <Navbar.Toggle aria-controls="navbarScroll" />

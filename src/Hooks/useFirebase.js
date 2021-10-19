@@ -36,11 +36,8 @@ const Usefirebase = () => {
     }
     const googleProvider = new GoogleAuthProvider()
     const signInUsingGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-        .then((result) => {
-            const user = result.user
-            setuser(user)
-        })
+       return signInWithPopup(auth, googleProvider)
+        
     }
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {

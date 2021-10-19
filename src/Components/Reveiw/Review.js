@@ -10,9 +10,9 @@ const Review = () => {
     const [activeItemIndex, setActiveItemIndex] = useState(0);
   const chevronWidth = 10;
     return (
-        <div className="container my-3" style={{ padding: `0 ${chevronWidth}px` }}>
+        <div className="container md:w-10/12 mx-auto my-3 sm:w-11/12" style={{ padding: `0 ${chevronWidth}px` }}>
             <h1 className="text-center my-3">Patient Reviews</h1>
-      <ItemsCarousel
+        <ItemsCarousel
         requestToChangeActive={setActiveItemIndex}
         activeItemIndex={activeItemIndex}
         numberOfCards={1}
@@ -22,7 +22,7 @@ const Review = () => {
         outsideChevron
         chevronWidth={chevronWidth}
         infiniteLoop={true}
-      >
+        >
         <div className="text-center flex items-center justify-center" >
             <div style={{ height: 400, width: 450, background: '#FFF' }}>
             <img className="rounded-full block mx-auto my-2" src={man1} alt="" />
@@ -60,8 +60,8 @@ const Review = () => {
         </div>
         
         
-      </ItemsCarousel>
-    </div>
+        </ItemsCarousel>
+     </div>
     );
 };
 

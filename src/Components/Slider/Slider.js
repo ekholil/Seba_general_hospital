@@ -12,7 +12,7 @@ const Slider = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3 className="text-5xl text-green-500">Modern and Updated medical instruments</h3>
+            <h3 className="md:text-5xl sm:text-lg text-green-500">Modern and Updated medical instruments</h3>
             <p>We have the top class medical instruments. Our machines are imported from America and china.</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -24,7 +24,7 @@ const Slider = () => {
           />
 
           <Carousel.Caption>
-            <h3 className="text-5xl text-green-500">Helpful and Experienced Doctors</h3>
+            <h3 className="md:text-5xl sm:text-lg text-green-500">Helpful and Experienced Doctors</h3>
             <p>Our doctors are dedicated and commited to give their best to patients.</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -36,9 +36,9 @@ const Slider = () => {
           />
 
           <Carousel.Caption>
-            <h3 className="text-5xl text-green-500">Imergency Department</h3>
+            <h3 className="md:text-5xl sm:text-lg text-green-500">Imergency Department</h3>
             <p>
-            Emergency Centre provides multidisciplinary emergency support 24 hours a day, 7 days a week with state-of-the-art facilities and expert trauma team, providing ventilator and life support
+            Emergency Centre provides multidisciplinary emergency support 24 hours a day, 7 days a week.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
