@@ -28,15 +28,15 @@ const Login = () => {
                 <AiOutlineUser className="mb-4 block text-7xl border-green-200 border-2 text-green-500 rounded-full p-7 box-content mx-auto" />
                 <h2 className="text-center">Please Log in</h2>
                 <div>
-                <label className="text-lg" htmlFor="">Your Email : </label>
+                <label className="text-lg" htmlFor="">Email : </label>
                 <input onChange={handleEmail} className="border block p-2 mb-3  w-full" type="text" placeholder="Enter Your Email" />
                 </div>
 
                 <div>
-                <label className="text-lg" htmlFor="">Your Email : </label>
+                <label className="text-lg" htmlFor="">Password : </label>
                 <input onChange={handlePassword} className="border block mb-3 p-2 w-full" type="password" placeholder="Enter Your Password" />
                 </div>
-                <p className="text-red-600">{error}</p>
+                <div className="text-red-600 mb-2">{error.message}</div>
                 <input onClick={() => signInUsingEmail(email, password)} className="bg-green-400 block p-2 w-full" type="button" placeholder="Enter Your Password" value="Log in"/>
                 <p className="text-center text-lg mt-2">Don't Have an account? <Link to="/signup">Sign up</Link> Or</p>
                 <div className="flex items-center justify-center border-2 border-green-400 p-1">

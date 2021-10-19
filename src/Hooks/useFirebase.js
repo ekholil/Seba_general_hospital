@@ -8,6 +8,7 @@ const Usefirebase = () => {
     const [error, setError] = useState('')
     initializeAuth()
     const auth = getAuth()
+    
     const signUpWithEmail = (name, email, password) => {
         console.log(typeof email, password)
         createUserWithEmailAndPassword(auth, email, password)
@@ -17,6 +18,8 @@ const Usefirebase = () => {
             updateProfile(auth.currentUser, {displayName: name})
             .then((result) => {
                 console.log(result)
+                window.location.reload()
+                setError('')
             })
             console.log(user)
         })
@@ -31,6 +34,7 @@ const Usefirebase = () => {
         .then((userCredential) => {
             const user = userCredential.user
             setuser(user)
+            setError('')
             console.log(user)
         })
         .catch((err) => {

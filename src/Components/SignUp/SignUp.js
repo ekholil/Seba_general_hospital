@@ -5,7 +5,7 @@ import UseAuth from '../../Hooks/UseAuth';
 
 
 const SignUp = () => {
-    const {signUpWithEmail, signInUsingGoogle} = UseAuth()
+    const {signUpWithEmail, signInUsingGoogle, error} = UseAuth()
     
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -50,7 +50,7 @@ const SignUp = () => {
                 <label className="text-lg" htmlFor="">Password : </label>
                 <input onChange={handlePassword} className="border block mb-2 p-2 w-full" type="password" placeholder="Enter Your Password" required/>
                 </div>
-               
+                <p className="text-red-600 mb-2">{error.message}</p>
 
                 <input className="bg-green-400 block p-2 w-full" type="button" onClick={() => signUpWithEmail(name, email, password)} value="Sign up" required/>
 

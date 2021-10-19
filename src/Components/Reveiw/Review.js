@@ -11,7 +11,7 @@ const Review = () => {
   const chevronWidth = 10;
     return (
         <div className="container md:w-10/12 mx-auto my-3 sm:w-11/12" style={{ padding: `0 ${chevronWidth}px` }}>
-            <h1 className="text-center my-3">Patient Reviews</h1>
+            <h1 className="text-center my-3 text-green-400">Patient Reviews</h1>
         <ItemsCarousel
         requestToChangeActive={setActiveItemIndex}
         activeItemIndex={activeItemIndex}
