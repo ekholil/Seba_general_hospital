@@ -1,3 +1,4 @@
+import  NotFound  from './Components/NotFound/NotFound';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Footer from './Components/Footer/Footer';
@@ -8,6 +9,7 @@ import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import ServiceDetail from './Components/Services/ServiceDetail';
 import SignUp from './Components/SignUp/SignUp';
 import AuthProvider from './Context/AuthProvider';
+import Contact from './Components/Contact/Contact';
 
 function App() {
   return (
@@ -28,8 +30,14 @@ function App() {
           <Route path="/login"> 
             <Login />
           </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
           <Route path="/signup">
             <SignUp />
+          </Route>
+          <Route path="*">
+            <NotFound />
           </Route>
         </Switch>
         <Footer />

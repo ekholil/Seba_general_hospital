@@ -4,7 +4,7 @@ import { Link, useLocation, useHistory } from 'react-router-dom';
 import UseAuth from '../../Hooks/UseAuth';
 
 const Login = () => {
-    const {signInUsingGoogle, signInUsingEmail} = UseAuth()
+    const {signInUsingGoogle, signInUsingEmail, error} = UseAuth()
     const location = useLocation()
     const history = useHistory()
     const [email, setEmail] = useState('')
@@ -36,6 +36,7 @@ const Login = () => {
                 <label className="text-lg" htmlFor="">Your Email : </label>
                 <input onChange={handlePassword} className="border block mb-3 p-2 w-full" type="password" placeholder="Enter Your Password" />
                 </div>
+                <p className="text-red-600">{error}</p>
                 <input onClick={() => signInUsingEmail(email, password)} className="bg-green-400 block p-2 w-full" type="button" placeholder="Enter Your Password" value="Log in"/>
                 <p className="text-center text-lg mt-2">Don't Have an account? <Link to="/signup">Sign up</Link> Or</p>
                 <div className="flex items-center justify-center border-2 border-green-400 p-1">

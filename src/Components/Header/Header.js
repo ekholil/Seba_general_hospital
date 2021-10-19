@@ -23,7 +23,7 @@ const Header = () => {
           >
             <Link className="no-underline text-gray-900 px-3" to="/home">Home</Link>
             
-            <Link className="no-underline text-gray-900 px-3" to="/contactus">Contact Us</Link>
+            <Link className="no-underline text-gray-900 px-3" to="/contact">Contact Us</Link>
             {user.email? <span>{user.displayName}</span>: <span></span>}
             {user.email? <button onClick={logOut}  className="border ml-1 px-2 py-1">Log out</button> : <Link className="no-underline text-gray-900 px-3" to="/login">Login</Link>}
             
