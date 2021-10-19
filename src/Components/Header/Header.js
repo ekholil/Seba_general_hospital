@@ -22,6 +22,8 @@ const Header = () => {
             navbarScroll
           >
             <Link className="no-underline text-gray-900 px-3" to="/home">Home</Link>
+
+            <Link className="no-underline text-gray-900 px-3" to="/doctors">Doctors</Link>
             
             <Link className="no-underline text-gray-900 px-3" to="/contact">Contact Us</Link>
             {user.email? <span>{user.displayName}</span>: <span></span>}

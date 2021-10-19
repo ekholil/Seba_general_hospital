@@ -10,6 +10,7 @@ import ServiceDetail from './Components/Services/ServiceDetail';
 import SignUp from './Components/SignUp/SignUp';
 import AuthProvider from './Context/AuthProvider';
 import Contact from './Components/Contact/Contact';
+import Doctors from './Components/Doctors/Doctors';
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
           </PrivateRoute>
           <Route path="/login"> 
             <Login />
+          </Route>
+          <Route path="/doctors">
+            <Doctors />
           </Route>
           <Route path="/contact">
             <Contact />
